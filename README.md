@@ -1,7 +1,14 @@
-[![Build Status](https://travis-ci.com/ladybug-tools/dragonfly-schema.svg?branch=master)](https://travis-ci.com/ladybug-tools/dragonfly-schema)
+<!-- [![Build Status](https://travis-ci.com/ladybug-tools/dragonfly-schema.svg?branch=master)](https://travis-ci.com/ladybug-tools/dragonfly-schema)
 [![Coverage Status](https://coveralls.io/repos/github/ladybug-tools/dragonfly-schema/badge.svg?branch=master)](https://coveralls.io/github/ladybug-tools/dragonfly-schema)
 
-[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/) -->
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+
+***This fork has been modified to work with pydantic v2. Currently, all tests pass except for docs generation.***
+
+***This fork itself relies on a [fork version of `honeybee-schema`](https://github.com/Ayush-Abraham/honeybee-schema) as one of its dependencies.***
+
+***This fork relies on python features that require python 3.10 or greater.***
 
 # dragonfly-schema
 
