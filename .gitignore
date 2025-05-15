@@ -12,3 +12,5 @@ docs/*.json
 .eggs
 build/
 *.egg-info*
+
+venv-dfs

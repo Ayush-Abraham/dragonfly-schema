@@ -1,16 +1,18 @@
 """Geometry for specifying sloped roofs over a Story."""
-from pydantic import Field, constr, conlist
+from pydantic import StringConstraints, Field
 
 from honeybee_schema._base import NoExtraBaseModel
 from honeybee_schema.model import Face3D
+from typing import List
+from typing_extensions import Annotated
 
 
 class RoofSpecification(NoExtraBaseModel):
     """Geometry for specifying sloped roofs over a Story."""
 
-    type: constr(regex='^RoofSpecification$') = 'RoofSpecification'
+    type: Annotated[str, StringConstraints(pattern='^RoofSpecification$')] = 'RoofSpecification'
 
-    geometry: conlist(Face3D, min_items=1) = Field(
+    geometry: Annotated[List[Face3D], Field(min_length=1)] = Field(
         ...,
         description='An array of Face3D objects representing the geometry of the '
         'Roof. None of these geometries should overlap in plan and, together, these '
